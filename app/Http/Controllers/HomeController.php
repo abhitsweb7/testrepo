@@ -10,7 +10,6 @@ use App\User;
 class HomeController extends Controller {
 
 	public function index(){
-		//echo "string";
 		$data = 'Hello World';
 
 		$users = User::all();
