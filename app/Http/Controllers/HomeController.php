@@ -9,12 +9,12 @@ use App\User;
 
 class HomeController extends Controller {
 
-	public function index(){
+	// this is index function for test purpose
+	public function index()
+	{
 		$data = 'Hello World';
 
 		$users = User::all();
-		//echo "<pre>";
-		//print_r($users->toArray());
 
 		return view('home', compact('data','users'));
 	}
